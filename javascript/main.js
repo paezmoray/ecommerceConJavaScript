@@ -1,17 +1,17 @@
 class Producto {
-    constructor(id, nombre, precio) {
+    constructor(id, nombre, precio, img) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio; 
-        //this.img = img;
+        this.img = img;
         this.cantidad = 1;
     }
 }
 
-const conjuntoPrimavera = new Producto(1, "Conjunto Primavera", 10000);
-const conjuntoRomance = new Producto(2, "Conjunto Romance", 8000);
-const vestido = new Producto(3, "Vestido", 5000);
-const pollera = new Producto(4, "Pollera", 3000);
+const conjuntoPrimavera = new Producto(1, "Conjunto Primavera", 9000, "/img/ropa1.jpg");
+const conjuntoRomance = new Producto(2, "Conjunto Romance", 7000, "/img/ropa2.jpg");
+const vestido = new Producto(3, "Vestido", 5000, "/img/ropa3.jpg");
+const pollera = new Producto(4, "Pollera", 3000, "/img/ropa4.jpg");
 
 
 //Creamos un Array con todo nuestro catálogo de productos: 
