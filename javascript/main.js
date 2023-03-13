@@ -1,17 +1,18 @@
 class Producto {
-    constructor(id, nombre, precio, img) {
+    constructor(id, nombre, descripcion, precio, img) {
         this.id = id;
         this.nombre = nombre;
+        this.descripcion = descripcion;
         this.precio = precio; 
         this.img = img;
         this.cantidad = 1;
     }
 }
 
-const conjuntoPrimavera = new Producto(1, "Conjunto Primavera", 9000, "/img/ropa1.jpg");
-const conjuntoRomance = new Producto(2, "Conjunto Romance", 7000, "/img/ropa2.jpg");
-const vestido = new Producto(3, "Vestido", 5000, "/img/ropa3.jpg");
-const pollera = new Producto(4, "Pollera", 3000, "/img/ropa4.jpg");
+const conjuntoPrimavera = new Producto(1, "Conjunto Primavera", "Short de jean y blusita blanca", 9000, "/img/ropa1.jpeg");
+const conjuntoRomance = new Producto(2, "Conjunto Romance", "Pollera con volados y manga larga blanca", 7000, "/img/ropa2.jpeg");
+const vestido = new Producto(3, "Vestido", "Vestido azul largo con volados", 5000, "/img/ropa3.jpeg");
+const pollera = new Producto(4, "Pollera", "Pollera a cuadrille blanco y negro vintage", 3000, "/img/ropa4.jpeg");
 
 
 //Creamos un Array con todo nuestro catálogo de productos: 
@@ -47,6 +48,7 @@ const mostrarProductos = () => {
                     <img src = "${producto.img}" class = "card-img-tom imgProductos">    
                     <div class = "card-body" >
                         <h2> ${producto.nombre} </h2>
+                        <h3> ${producto.descripcion} </h2>
                         <p> ${producto.precio} </p>
                         <button class = "btn colorBoton" id = "boton${producto.id}" >Agregar al Carrito</button>
                     </div>
