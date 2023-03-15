@@ -9,10 +9,10 @@ class Producto {
     }
 }
 
-const conjuntoPrimavera = new Producto(1, "Conjunto Primavera", "Short de jean y blusita blanca", 9000, "/img/ropa1.jpeg");
-const conjuntoRomance = new Producto(2, "Conjunto Romance", "Pollera con volados y manga larga blanca", 7000, "/img/ropa2.jpeg");
-const vestido = new Producto(3, "Vestido", "Vestido azul largo con volados", 5000, "/img/ropa3.jpeg");
-const pollera = new Producto(4, "Pollera", "Pollera a cuadrille blanco y negro vintage", 3000, "/img/ropa4.jpeg");
+const conjuntoPrimavera = new Producto(1, "Conjunto Primavera", "Short de jean y blusita blanca", 9000, "../img/ropa1.jpeg");
+const conjuntoRomance = new Producto(2, "Conjunto Romance", "Pollera con volados y manga larga blanca", 7000, "../img/ropa2.jpeg");
+const vestido = new Producto(3, "Vestido", "Vestido azul largo con volados", 5000, "../img/ropa3.jpeg");
+const pollera = new Producto(4, "Pollera", "Pollera a cuadrille blanco y negro vintage", 3000, "../img/ropa4.jpeg");
 
 
 //Creamos un Array con todo nuestro catálogo de productos: 
