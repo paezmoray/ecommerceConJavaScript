@@ -1,0 +1,165 @@
+/* HEADER */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+header {
+  background-color: rgb(180, 34, 180);
+  margin: 5px;
+  border: 2px salmon solid;
+  padding: 5px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  grid-area: header;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(226, 43, 226);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 4px 3px #41463d;
+}
+
+@keyframes marca {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.marca {
+  animation-name: marca;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  grid-area: nav;
+}
+
+footer {
+  background-color: rgb(180, 34, 180);
+  margin: 5px;
+  border: 2px salmon solid;
+  padding: 5px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  grid-area: footer;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+footer h3 {
+  font-size: 1rem;
+}
+
+/*Todas las paginas*/
+main {
+  background-color: rgb(250, 215, 244);
+  margin: 5px;
+  border: 2px solid violet;
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*Inicio*/
+.nosotros {
+  align-items: center;
+  width: 12.5rem;
+  height: 12.5rem;
+  filter: grayscale(70%);
+}
+.nosotros:hover {
+  filter: grayscale(0%);
+  width: 15.6rem;
+  height: 15.6rem;
+  transition: all 2s;
+}
+
+.parrafo {
+  text-align: justify;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*Productos*/
+body main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+  filter: grayscale(70%);
+}
+
+img:hover {
+  filter: grayscale(0%);
+}
+
+body main section button {
+  border-radius: 5px;
+  background-color: #ec9cf6;
+  width: 80px;
+  height: 25px;
+  cursor: pointer;
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+  padding: 0px;
+ }
+
+.button:hover {
+  background-color: #d08ada;
+  width: 5.5rem;
+  height: 1.55rem;
+  transition: all 1s;
+}
+
+/*Contacto*/
+form input {
+  border-radius: 5px;
+  background-color: #ec9cf6;
+  width: 5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+form textarea {
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=estilo.css.map */
